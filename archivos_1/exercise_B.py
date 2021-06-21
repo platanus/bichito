@@ -1,15 +1,15 @@
-grades_file = open("grades.txt", "r")
-grades_lines = grades_file.readlines()
+archivo_notas = open("notas.txt", "r")
+lineas_notas = archivo_notas.readlines()
 
-grades_sum = 0
-grades_count = 0
+suma_notas = 0
+cuenta_notas = 0
 
-for line in grades_lines:
-  grades_float = float(line)
-  grades_sum += grades_float
-  grades_count += 1
+for linea in lineas_notas:
+  float_nota = float(linea)
+  suma_notas += float_nota
+  cuenta_notas += 1
 
-average = grades_sum / grades_count
-print(average)
+promedio = suma_notas / cuenta_notas
+print(promedio)
 
-grades_file.close()
+archivo_notas.close()

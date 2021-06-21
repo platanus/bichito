@@ -1,11 +1,11 @@
-grades_file = open("grades.txt", "r")
+archivo_notas = open("notas.txt", "r")
 
-first_grade = float(grades_file.readline())
-second_grade = float(grades_file.readline())
-third_grade = float(grades_file.readline())
-fourth_grade = float(grades_file.readline())
+primera_nota = float(archivo_notas.readline())
+segunda_nota = float(archivo_notas.readline())
+tercera_nota = float(archivo_notas.readline())
+cuarta_nota = float(archivo_notas.readline())
 
-average = sum([first_grade, second_grade, third_grade, fourth_grade]) / 4
-print(average)
+promedio = sum([primera_nota, segunda_nota, tercera_nota, cuarta_nota]) / 4
+print(promedio)
 
-grades_file.close()
+archivo_notas.close()

@@ -1,6 +1,6 @@
-grades_file = open("grades.txt", "r")
-grades_content = grades_file.read()
+archivo_notas = open("notas.txt", "r")
+contenido_notas = archivo_notas.read()
 
-print(grades_content)
+print(contenido_notas)
 
-grades_file.close()
+archivo_notas.close()
