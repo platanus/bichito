@@ -1,7 +1,13 @@
 /* eslint-disable no-undef */
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Ubuntu', ...fontFamily.sans],
+      },
+    },
   },
   variants: {},
   plugins: [],
