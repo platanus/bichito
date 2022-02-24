@@ -1,5 +1,0 @@
-Reporte
-Promedio Lenguaje: 5.6
-Promedio Historia: 5.5
-Promedio Biología: 6.15
-Promedio Total: 5.75
