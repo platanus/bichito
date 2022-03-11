@@ -10,19 +10,15 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%if Rails.env.production? %>
-      <%= render "shared/gtm_head" %>
-    <% end %>
-  
     <%= stylesheet_pack_tag 'application' %>
   </head>
 
-  <body>  <%if Rails.env.production? %>
-      <%= render "shared/gtm_body" %>
-    <% end %>
-  
-    <div id="vue-app">
-      <app></app>
+  <body
+    class="bg-white"
+  >
+    <div 
+      id="vue-app"
+    >
       <%= yield %>
     </div>
   </body>
